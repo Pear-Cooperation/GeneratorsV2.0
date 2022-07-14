@@ -6,14 +6,19 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct GeneratorsApp: App {
     let persistenceController = PersistenceController.shared
 
+    init() {
+    FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
