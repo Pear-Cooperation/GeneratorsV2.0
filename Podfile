@@ -6,6 +6,9 @@ target 'Generators' do
   use_frameworks!
 
   # Pods for Generators
+  pod 'Firebase'
+  pod ‘Firebase/Core’
+  pod ‘Firebase/Database’
 
   target 'GeneratorsTests' do
     inherit! :search_paths

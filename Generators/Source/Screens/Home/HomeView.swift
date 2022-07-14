@@ -1,14 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Generators
 //
-//  Created by Volodymyr Mendyk on 13/07/2022.
+//  Created by Volodymyr Mendyk on 14/07/2022.
 //
 
 import SwiftUI
-import CoreData
 
-struct ContentView: View {
+struct HomeView: View {
     
     var body: some View {
         VStack {
@@ -17,8 +16,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
