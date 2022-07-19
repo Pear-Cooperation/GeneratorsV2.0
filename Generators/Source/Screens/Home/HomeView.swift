@@ -10,9 +10,10 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        VStack {
-          Text("Hello world!")
-        } .background(.gray)
+        HStack {
+            Button("Tap me please") {}
+                .buttonStyle(CustomizableButtonStyle())
+        }
     }
 }
 
